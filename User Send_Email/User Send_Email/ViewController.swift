@@ -32,8 +32,8 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
         mailComposeViewController.mailComposeDelegate = self
         mailComposeViewController.setToRecipients(["huy106964@huce.edu.vn"])
 
-//        mailComposeViewController.setSubject("Subject of the Email")
-//        mailComposeViewController.setMessageBody("Body of the Email", isHTML: false)
+        mailComposeViewController.setSubject("Feedback your app!")
+        mailComposeViewController.setMessageBody("Description", isHTML: false)
 
         present(mailComposeViewController, animated: true, completion: nil)
     }
